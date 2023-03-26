@@ -24,7 +24,7 @@ Promise.all(promises).then(results => {
     const nameCell = row.insertCell();
     const timeCell = row.insertCell();
     nameCell.innerText = `Promise ${i+1}`;
-    timeCell.innerText = `${result.toFixed(3)}s`;
+    timeCell.innerText = `${result.toFixed()}`;
   });
 
   // Add total row
@@ -32,5 +32,5 @@ Promise.all(promises).then(results => {
   const totalNameCell = totalRow.insertCell();
   const totalTimeCell = totalRow.insertCell();
   totalNameCell.innerText = "Total";
-  totalTimeCell.innerText = `${results.reduce((acc, val) => acc + val, 0).toFixed(3)}s`;
+  totalTimeCell.innerText = `${results.reduce((acc, val) => acc + val, 0).toFixed(3)}`;
 });
