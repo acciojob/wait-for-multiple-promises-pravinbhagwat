@@ -24,7 +24,7 @@ Promise.all(promises).then(results => {
     const nameCell = row.insertCell();
     const timeCell = row.insertCell();
     nameCell.innerText = `Promise ${i+1}`;
-    timeCell.innerText = `${result.toFixed(2)}`;
+    timeCell.innerText = `${result.toFixed()}`;
   });
 
   // Add total row
