@@ -1,10 +1,10 @@
 const table = document.getElementById("output");
 
 // Add loading row
-const loadingRow = table.insertRow();
-const loadingCell = loadingRow.insertCell();
-loadingCell.colSpan = "2";
-loadingCell.innerText = "Loading...";
+// const loadingRow = table.insertRow();
+// const loadingCell = loadingRow.insertCell();
+// loadingCell.colSpan = "2";
+// loadingCell.innerText = "Loading...";
 
 // Create 3 random promises
 const promises = [
